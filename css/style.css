@@ -7103,6 +7103,10 @@ textarea:required {
     color: #4a7aec;
 }
 
+.footer-heading {
+    color: #fe0000 !important;
+}
+
 .contact_info_area .contact_info {
     text-align: left !important;
 }
