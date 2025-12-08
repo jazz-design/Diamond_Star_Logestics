@@ -1258,7 +1258,6 @@ nav {
     min-height: 750px;
     background: url('../img/bg-img/header2.html') no-repeat bottom center;
     background-size: cover;
-    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -1408,6 +1407,78 @@ nav {
 .city-img {
     position: relative;
     bottom: -50px
+}
+
+/* code added by h */
+
+/* Section itself */
+.hero-section {
+    padding: 0;
+    /* remove extra padding around slider */
+    margin: 0;
+    width: 100%;
+}
+
+/* Ensure flex parents don't shrink it */
+.hero-section,
+#dslHeroSlider {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+/* Carousel & slides full viewport */
+#dslHeroSlider,
+#dslHeroSlider .carousel-inner,
+#dslHeroSlider .carousel-item {
+    width: 100%;
+    height: 100vh;
+    /* full screen height */
+}
+
+.banner1-bg {
+    background-image: url("../img/bg-img/banner1-bg.jpg");
+}
+
+.banner2-bg {
+    background-image: url("../img/bg-img/banner2-bg.jpg");
+}
+
+.banner3-bg {
+    background-image: url("../img/bg-img/banner3-bg.jpg");
+}
+
+/* Background images */
+.banner1-bg,
+.banner2-bg,
+.banner3-bg {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* Center content vertically inside each slide */
+.hero-slide-inner {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    width: 100%;
+}
+
+/* Optional: dark overlay if text is not visible */
+.banner1-bg::before,
+.banner2-bg::before,
+.banner3-bg::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    z-index: 1;
+}
+
+.hero-slide-inner>.container {
+    position: relative;
+    z-index: 2;
 }
 
 @media (max-width: 991px) {
@@ -7101,10 +7172,6 @@ textarea:required {
 
 .footer-social-info a i:hover {
     color: #4a7aec;
-}
-
-.footer-heading {
-    color: #fe0000 !important;
 }
 
 .contact_info_area .contact_info {
