@@ -503,8 +503,8 @@ ol {
 }
 
 .section-padding-100-70 {
-    padding-top: 100px;
-    padding-bottom: 70px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .section-padding-0-70 {
@@ -956,7 +956,7 @@ ol {
     padding: 0 20px;
     min-width: 100px;
     color: #fff !important;
-    background: #fe0000;
+    background: #ef4242;
     height: 35px;
     border: 1px solid #fff;
     letter-spacing: 1px;
@@ -2357,7 +2357,7 @@ p.artficial:before {
 }
 
 .video-btn {
-    background-color: #fe0000;
+    background-color: #ef4242;
     width: 70px;
     height: 70px;
     color: #fff;
@@ -2394,7 +2394,7 @@ p.artficial:before {
     font-weight: 700 !important;
     text-transform: uppercase;
     display: inline-block;
-    background: #fe0000;
+    background: #ef4242;
 }
 
 .btn-paint.v2 {
@@ -3099,7 +3099,7 @@ p.artficial:before {
 }
 
 .hot-box {
-    background: #fe0000 !important;
+    background: #ef4242 !important;
     max-width: 80px;
     padding: 10px;
 }
@@ -6003,7 +6003,7 @@ p.artficial:before {
 .icon_wrapper:after {
     content: '';
     border-right: 120px solid transparent;
-    border-top: 120px solid #fe0000;
+    border-top: 120px solid #ef4242;
     position: absolute;
     left: 0px;
     top: 0px;
@@ -7337,7 +7337,7 @@ textarea:required {
     text-transform: uppercase;
     color: #fff;
     margin-bottom: 15px;
-    background-color: #fe0000;
+    background-color: #ef4242;
     cursor: pointer;
 }
 
@@ -8316,7 +8316,7 @@ body.light-version {
 }
 
 .light-version .more-btn-group dt.v2 {
-    background: #fe0000
+    background: #ef4242
 }
 
 .light-version .more-btn-group dt:first-child {
