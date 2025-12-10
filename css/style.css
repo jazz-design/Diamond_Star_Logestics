@@ -1155,7 +1155,7 @@ nav {
 .shrink {
     animation: .3s ease-in-out;
     animation-name: fadeInDown;
-    background-color: rgb(239, 241, 255);
+    background-color: #e6f3fc;
 }
 
 @-webkit-keyframes fadeInDown {
@@ -4434,7 +4434,7 @@ p.artficial:before {
 
 .service_single_content h6 {
     margin-bottom: 15px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600
 }
 
@@ -4449,9 +4449,9 @@ p.artficial:before {
     position: absolute !important;
     right: 0;
     width: 80%;
-    bottom: 18px;
+    bottom: 0px;
     display: block;
-    background: #3b61b9;
+    background: #3558a9;
     max-width: 320px;
     margin-left: auto;
     margin-right: auto;
@@ -7138,6 +7138,12 @@ textarea:required {
 
 .footer-logo img {
     width: 150px;
+}
+
+.footer-heading {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #ef4242 !important;
 }
 
 .footer-side-thumbnail {
