@@ -8703,3 +8703,28 @@ img {
         margin-left: 0 !important;
     }
 }
+
+
+.footer-social-info {
+    position: relative;
+}
+
+/* FORCE extreme right */
+.crafted-by {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 14px;
+    color: #ffffff;
+    white-space: nowrap;
+}
+
+.crafted-by .pixel {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.crafted-by .one {
+    color: #e60000;
+    font-weight: 600;
+}
