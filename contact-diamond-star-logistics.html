@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Title -->
-    <title>About Us</title>
+    <title>Contact Diamond Star Logistics</title>
 
     <!-- Favicon -->
     <link rel="icon" href="img/core-img/favicon.ico">
@@ -122,7 +122,7 @@
             <div class="row justify-content-center">
                 <div class="col-12 col-md-10">
                     <div class="contact_form">
-                        <form action="#" method="post" id="main_contact_form" novalidate>
+                        <form action="send-email.php" method="post" id="main_contact_form" novalidate>
                             <div class="row">
                                 <div class="col-12">
                                     <div id="success_fail_info"></div>
@@ -372,6 +372,9 @@
                                 <p>dispatch@dslgoc.com</p>
                             </div>
                         </div>
+                        <div class="crafted-by">
+                            Designed by <span class="pixel">pixel</span><span class="one">one</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -392,6 +395,27 @@
 
     <!-- script js -->
     <script src="js/script.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#main_contact_form').on('submit', function (e) {
+                e.preventDefault();
+
+                $.ajax({
+                    type: 'POST',
+                    url: 'send-email.php',
+                    data: $(this).serialize(),
+                    success: function (response) {
+                        $('#success_fail_info').html('<div class="alert alert-success">Thank you! Your message has been sent to Admin. We\'ll respond soon.</div>');
+                        $('#main_contact_form')[0].reset();
+                    },
+                    error: function () {
+                        $('#success_fail_info').html('<div class="alert alert-danger">Sorry, there was an error. Please try again.</div>');
+                    }
+                });
+            });
+        });
+    </script>
+
 
 </body>
 
