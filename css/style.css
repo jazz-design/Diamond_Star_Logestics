@@ -8755,3 +8755,126 @@ img {
         text-align: center;
     }
 }
+
+.video-thumb {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Dark overlay */
+.video-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease;
+}
+
+/* Play button */
+.play-btn {
+    width: 70px;
+    height: 70px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    color: #000;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+/* Hover effects */
+.video-thumb:hover .video-overlay {
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.video-thumb:hover .play-btn {
+    transform: scale(1.15);
+    background: #ef4242;
+    /* optional brand color */
+    color: #000;
+}
+
+/* Mobile optimization */
+@media (max-width: 576px) {
+    .play-btn {
+        width: 55px;
+        height: 55px;
+        font-size: 20px;
+    }
+}
+
+/* =============================
+   Gallery Tabs
+============================= */
+
+.gallery-tabs {
+    border-bottom: none;
+    gap: 15px;
+}
+
+/* Tab base */
+.gallery-tabs .nav-link {
+    border: none;
+    padding: 14px 28px;
+    border-radius: 40px;
+    background: #f4f6f9;
+    color: #444;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+/* Icons */
+.gallery-tabs .nav-link i {
+    font-size: 18px;
+}
+
+/* Hover */
+.gallery-tabs .nav-link:hover {
+    background: #e9ecf2;
+    transform: translateY(-2px);
+}
+
+/* Active */
+.gallery-tabs .nav-link.active {
+    background: linear-gradient(135deg, #ef4242, #c12e2e);
+    color: #ffffff;
+    box-shadow: 0 10px 25px rgba(239, 66, 66, 0.35);
+}
+
+/* Remove Bootstrap underline */
+.gallery-tabs .nav-link.active::after {
+    display: none;
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .gallery-tabs .nav-link {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+}
+
+.tab-pane {
+    animation: fadeUp 0.4s ease;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

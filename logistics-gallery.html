@@ -20,6 +20,10 @@
 
 <!-- Responsive Stylesheet -->
 <link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 
 </head>
 
@@ -119,15 +123,24 @@
             </div>
 
             <!-- Tabs -->
-            <ul class="nav nav-tabs justify-content-center mb-40" id="galleryTabs" role="tablist">
+            <ul class="nav gallery-tabs justify-content-center mb-50" id="galleryTabs" role="tablist">
+
                 <li class="nav-item">
-                    <a class="nav-link active" id="photos-tab" data-toggle="tab" href="#photos" role="tab">Photos</a>
+                    <a class="nav-link active" id="photos-tab" data-toggle="tab" href="#photos" role="tab">
+                        <i class="fa fa-camera"></i>
+                        <span>Photos</span>
+                    </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" id="videos-tab" data-toggle="tab" href="#videos" role="tab">Videos</a>
+                    <a class="nav-link" id="videos-tab" data-toggle="tab" href="#videos" role="tab">
+                        <i class="fa fa-video-camera"></i>
+                        <span>Videos</span>
+                    </a>
                 </li>
+
             </ul>
+
 
             <!-- Tabs Content -->
             <div class="tab-content" id="galleryTabsContent">
@@ -138,38 +151,38 @@
                     <div class="row">
 
                         <div class="col-12 col-md-6 col-lg-4 mb-30">
-                            <a href="img/blog-img/1.jpg" class="glightbox" data-gallery="dsl-photos">
-                                <img src="img/blog-img/1.jpg" class="img-fluid box-shadow" alt="">
+                            <a href="img/core-img/gal_1.jpg" class="glightbox" data-gallery="dsl-photos">
+                                <img src="img/core-img/gal_1.jpg" class="img-fluid box-shadow" alt="">
                             </a>
                         </div>
 
                         <div class="col-12 col-md-6 col-lg-4 mb-30">
-                            <a href="img/blog-img/2.jpg" class="glightbox" data-gallery="dsl-photos">
-                                <img src="img/blog-img/2.jpg" class="img-fluid box-shadow" alt="">
+                            <a href="img/core-img/gal_1.jpg" class="glightbox" data-gallery="dsl-photos">
+                                <img src="img/core-img/gal_1.jpg" class="img-fluid box-shadow" alt="">
                             </a>
                         </div>
 
                         <div class="col-12 col-md-6 col-lg-4 mb-30">
-                            <a href="img/blog-img/3.jpg" class="glightbox" data-gallery="dsl-photos">
-                                <img src="img/blog-img/3.jpg" class="img-fluid box-shadow" alt="">
+                            <a href="img/core-img/gal_1.jpg" class="glightbox" data-gallery="dsl-photos">
+                                <img src="img/core-img/gal_1.jpg" class="img-fluid box-shadow" alt="">
                             </a>
                         </div>
 
                         <div class="col-12 col-md-6 col-lg-4 mb-30">
-                            <a href="img/blog-img/1.jpg" class="glightbox" data-gallery="dsl-photos">
-                                <img src="img/blog-img/1.jpg" class="img-fluid box-shadow" alt="">
+                            <a href="img/core-img/gal_1.jpg" class="glightbox" data-gallery="dsl-photos">
+                                <img src="img/core-img/gal_1.jpg" class="img-fluid box-shadow" alt="">
                             </a>
                         </div>
 
                         <div class="col-12 col-md-6 col-lg-4 mb-30">
-                            <a href="img/blog-img/2.jpg" class="glightbox" data-gallery="dsl-photos">
-                                <img src="img/blog-img/2.jpg" class="img-fluid box-shadow" alt="">
+                            <a href="img/core-img/gal_1.jpg" class="glightbox" data-gallery="dsl-photos">
+                                <img src="img/core-img/gal_1.jpg" class="img-fluid box-shadow" alt="">
                             </a>
                         </div>
 
                         <div class="col-12 col-md-6 col-lg-4 mb-30">
-                            <a href="img/blog-img/3.jpg" class="glightbox" data-gallery="dsl-photos">
-                                <img src="img/blog-img/3.jpg" class="img-fluid box-shadow" alt="">
+                            <a href="img/core-img/gal_1.jpg" class="glightbox" data-gallery="dsl-photos">
+                                <img src="img/core-img/gal_1.jpg" class="img-fluid box-shadow" alt="">
                             </a>
                         </div>
 
@@ -186,17 +199,19 @@
 
                         <!-- Video 1 -->
                         <div class="col-12 col-md-6 col-lg-4 mb-30">
-                            <a href="https://www.youtube.com/watch?v=bkMtwm7bTuc&t=3s" class="glightbox"
+                            <a href="https://www.youtube.com/watch?v=bkMtwm7bTuc" class="glightbox"
                                 data-gallery="dsl-videos" data-type="video">
 
                                 <div class="video-thumb box-shadow">
-                                    <img src="https://img.youtube.com/vi/bkMtwm7bTuc/maxresdefault.jpg"
-                                        class="img-fluid" alt="Fleet Video">
+                                    <img src="img/core-img/video_tb.jpg" class="img-fluid" alt="Fleet Video">
 
-                                    <div class="video-play-icon">
-                                        <i class="fa fa-play"></i>
+                                    <div class="video-overlay">
+                                        <span class="play-btn">
+                                            <i class="fa fa-play"></i>
+                                        </span>
                                     </div>
                                 </div>
+
 
                             </a>
                         </div>
@@ -207,13 +222,15 @@
                                 data-gallery="dsl-videos" data-type="video">
 
                                 <div class="video-thumb box-shadow">
-                                    <img src="https://img.youtube.com/vi/8aCpxlLYtCw/maxresdefault.jpg"
-                                        class="img-fluid" alt="Operation Video">
+                                    <img src="img/core-img/video_tb.jpg" class="img-fluid" alt="Fleet Video">
 
-                                    <div class="video-play-icon">
-                                        <i class="fa fa-play"></i>
+                                    <div class="video-overlay">
+                                        <span class="play-btn">
+                                            <i class="fa fa-play"></i>
+                                        </span>
                                     </div>
                                 </div>
+
 
                             </a>
                         </div>
@@ -224,13 +241,15 @@
                                 data-gallery="dsl-videos" data-type="video">
 
                                 <div class="video-thumb box-shadow">
-                                    <img src="https://img.youtube.com/vi/FfkOsAlp82s/maxresdefault.jpg"
-                                        class="img-fluid" alt="Delivery Video">
+                                    <img src="img/core-img/video_tb.jpg" class="img-fluid" alt="Fleet Video">
 
-                                    <div class="video-play-icon">
-                                        <i class="fa fa-play"></i>
+                                    <div class="video-overlay">
+                                        <span class="play-btn">
+                                            <i class="fa fa-play"></i>
+                                        </span>
                                     </div>
                                 </div>
+
 
                             </a>
                         </div>
@@ -354,6 +373,22 @@
 
     <!-- Lightbox Script -->
     <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+
+    <script>
+        const photoLightbox = GLightbox({
+            selector: '[data-gallery="dsl-photos"]',
+            loop: true,
+            zoomable: true
+        });
+
+        const videoLightbox = GLightbox({
+            selector: '[data-gallery="dsl-videos"]',
+            type: 'video',
+            loop: true
+        });
+    </script>
+
 
     <script>
         const lightbox = GLightbox({
